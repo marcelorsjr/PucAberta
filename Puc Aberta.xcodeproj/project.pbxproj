@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		638DD9431EB7D54C00154AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DD9421EB7D54C00154AD5 /* AppDelegate.swift */; };
-		638DD9451EB7D54C00154AD5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DD9441EB7D54C00154AD5 /* FirstViewController.swift */; };
-		638DD9471EB7D54C00154AD5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DD9461EB7D54C00154AD5 /* SecondViewController.swift */; };
 		638DD94A1EB7D54C00154AD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638DD9481EB7D54C00154AD5 /* Main.storyboard */; };
 		638DD94C1EB7D54C00154AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638DD94B1EB7D54C00154AD5 /* Assets.xcassets */; };
 		638DD94F1EB7D54C00154AD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638DD94D1EB7D54C00154AD5 /* LaunchScreen.storyboard */; };
 		638DD95A1EB7D54C00154AD5 /* Puc_AbertaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DD9591EB7D54C00154AD5 /* Puc_AbertaTests.swift */; };
 		638DD9651EB7D54C00154AD5 /* Puc_AbertaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DD9641EB7D54C00154AD5 /* Puc_AbertaUITests.swift */; };
+		63B1B1431EB7E5E600C667C0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1B1421EB7E5E600C667C0 /* MapViewController.swift */; };
+		63B1B1451EB7F80400C667C0 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1B1441EB7F80400C667C0 /* CoursesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* Begin PBXFileReference section */
 		638DD93F1EB7D54C00154AD5 /* Puc Aberta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puc Aberta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638DD9421EB7D54C00154AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		638DD9441EB7D54C00154AD5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		638DD9461EB7D54C00154AD5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		638DD9491EB7D54C00154AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		638DD94B1EB7D54C00154AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		638DD94E1EB7D54C00154AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		638DD9601EB7D54C00154AD5 /* Puc AbertaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Puc AbertaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638DD9641EB7D54C00154AD5 /* Puc_AbertaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puc_AbertaUITests.swift; sourceTree = "<group>"; };
 		638DD9661EB7D54C00154AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B1B1421EB7E5E600C667C0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ViewControllers/MapViewController.swift; sourceTree = "<group>"; };
+		63B1B1441EB7F80400C667C0 /* CoursesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoursesViewController.swift; path = ViewControllers/CoursesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,8 @@
 		638DD9411EB7D54C00154AD5 /* Puc Aberta */ = {
 			isa = PBXGroup;
 			children = (
+				63B1B13F1EB7E5AB00C667C0 /* ViewControllers */,
 				638DD9421EB7D54C00154AD5 /* AppDelegate.swift */,
-				638DD9441EB7D54C00154AD5 /* FirstViewController.swift */,
-				638DD9461EB7D54C00154AD5 /* SecondViewController.swift */,
 				638DD9481EB7D54C00154AD5 /* Main.storyboard */,
 				638DD94B1EB7D54C00154AD5 /* Assets.xcassets */,
 				638DD94D1EB7D54C00154AD5 /* LaunchScreen.storyboard */,
@@ -126,6 +125,15 @@
 				638DD9661EB7D54C00154AD5 /* Info.plist */,
 			);
 			path = "Puc AbertaUITests";
+			sourceTree = "<group>";
+		};
+		63B1B13F1EB7E5AB00C667C0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63B1B1421EB7E5E600C667C0 /* MapViewController.swift */,
+				63B1B1441EB7F80400C667C0 /* CoursesViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				638DD9471EB7D54C00154AD5 /* SecondViewController.swift in Sources */,
+				63B1B1431EB7E5E600C667C0 /* MapViewController.swift in Sources */,
 				638DD9431EB7D54C00154AD5 /* AppDelegate.swift in Sources */,
-				638DD9451EB7D54C00154AD5 /* FirstViewController.swift in Sources */,
+				63B1B1451EB7F80400C667C0 /* CoursesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +526,7 @@
 				638DD96B1EB7D54C00154AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		638DD96C1EB7D54C00154AD5 /* Build configuration list for PBXNativeTarget "Puc AbertaTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +535,7 @@
 				638DD96E1EB7D54C00154AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		638DD96F1EB7D54C00154AD5 /* Build configuration list for PBXNativeTarget "Puc AbertaUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +544,7 @@
 				638DD9711EB7D54C00154AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

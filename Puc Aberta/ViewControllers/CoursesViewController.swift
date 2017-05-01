@@ -8,11 +8,21 @@
 
 import UIKit
 
-class CoursesViewController: BaseViewController {
+class CoursesViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.automaticallyAdjustsScrollViewInsets = false;
+        
+        self.activityIndicator.startAnimating()
+        let requestURL = NSURL(string:"http://www.pucminas.br/Graduacao/Paginas/default.aspx")
+        let request = NSURLRequest(url: requestURL as! URL)
+        webView.loadRequest(request as URLRequest)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -32,4 +42,13 @@ class CoursesViewController: BaseViewController {
     }
     */
 
+}
+
+extension CoursesViewController: UIWebViewDelegate {
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        if !webView.isLoading {
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.isHidden = true
+        }
+    }
 }

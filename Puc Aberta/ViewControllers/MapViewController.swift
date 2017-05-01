@@ -7,19 +7,35 @@
 //
 
 import UIKit
+import MapKit
 
-class MapViewController: BaseViewController {
+class MapViewController: UIViewController {
+    @IBOutlet weak var mapView: MKMapView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
+        centerMapOnLocation(location: initialLocation)
         // Do any additional setup after loading the view.
     }
 
+    let regionRadius: CLLocationDistance = 1000
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     
 
     /*
