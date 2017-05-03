@@ -15,6 +15,9 @@
 		638DD9651EB7D54C00154AD5 /* Puc_AbertaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DD9641EB7D54C00154AD5 /* Puc_AbertaUITests.swift */; };
 		63B1B1431EB7E5E600C667C0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1B1421EB7E5E600C667C0 /* MapViewController.swift */; };
 		63B1B1451EB7F80400C667C0 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1B1441EB7F80400C667C0 /* CoursesViewController.swift */; };
+		63B1B1471EB92CED00C667C0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1B1461EB92CED00C667C0 /* AboutViewController.swift */; };
+		63B1B1491EB92D0A00C667C0 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1B1481EB92D0A00C667C0 /* QRCodeViewController.swift */; };
+		63B1B14B1EB92D4200C667C0 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1B14A1EB92D4200C667C0 /* ScheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		638DD9661EB7D54C00154AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63B1B1421EB7E5E600C667C0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ViewControllers/MapViewController.swift; sourceTree = "<group>"; };
 		63B1B1441EB7F80400C667C0 /* CoursesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoursesViewController.swift; path = ViewControllers/CoursesViewController.swift; sourceTree = "<group>"; };
+		63B1B1461EB92CED00C667C0 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ViewControllers/AboutViewController.swift; sourceTree = "<group>"; };
+		63B1B1481EB92D0A00C667C0 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeViewController.swift; path = ViewControllers/QRCodeViewController.swift; sourceTree = "<group>"; };
+		63B1B14A1EB92D4200C667C0 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleViewController.swift; path = ViewControllers/ScheduleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,9 @@
 			children = (
 				63B1B1421EB7E5E600C667C0 /* MapViewController.swift */,
 				63B1B1441EB7F80400C667C0 /* CoursesViewController.swift */,
+				63B1B1461EB92CED00C667C0 /* AboutViewController.swift */,
+				63B1B1481EB92D0A00C667C0 /* QRCodeViewController.swift */,
+				63B1B14A1EB92D4200C667C0 /* ScheduleViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -275,7 +284,10 @@
 			files = (
 				63B1B1431EB7E5E600C667C0 /* MapViewController.swift in Sources */,
 				638DD9431EB7D54C00154AD5 /* AppDelegate.swift in Sources */,
+				63B1B1471EB92CED00C667C0 /* AboutViewController.swift in Sources */,
+				63B1B14B1EB92D4200C667C0 /* ScheduleViewController.swift in Sources */,
 				63B1B1451EB7F80400C667C0 /* CoursesViewController.swift in Sources */,
+				63B1B1491EB92D0A00C667C0 /* QRCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
