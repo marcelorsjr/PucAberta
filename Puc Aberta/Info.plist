@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Leitor de QRCode</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -23,11 +25,6 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-<<<<<<< HEAD
-=======
-	<key>NSCameraUsageDescription</key>
-	<string>Escanear QR Code</string>
->>>>>>> cccad6b91833880473bbf33a4de23cfa51717bf1
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
