@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6341FBE61EBBE43B003FDE1C /* schedule.html in Resources */ = {isa = PBXBuildFile; fileRef = 6341FBE51EBBE43B003FDE1C /* schedule.html */; };
 		638DD9431EB7D54C00154AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DD9421EB7D54C00154AD5 /* AppDelegate.swift */; };
 		638DD94A1EB7D54C00154AD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638DD9481EB7D54C00154AD5 /* Main.storyboard */; };
 		638DD94C1EB7D54C00154AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638DD94B1EB7D54C00154AD5 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6341FBE51EBBE43B003FDE1C /* schedule.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = schedule.html; sourceTree = "<group>"; };
 		638DD93F1EB7D54C00154AD5 /* Puc Aberta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puc Aberta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638DD9421EB7D54C00154AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		638DD9491EB7D54C00154AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				638DD9421EB7D54C00154AD5 /* AppDelegate.swift */,
 				638DD9481EB7D54C00154AD5 /* Main.storyboard */,
 				638DD94B1EB7D54C00154AD5 /* Assets.xcassets */,
+				6341FBE51EBBE43B003FDE1C /* schedule.html */,
 				638DD94D1EB7D54C00154AD5 /* LaunchScreen.storyboard */,
 				638DD9501EB7D54C00154AD5 /* Info.plist */,
 			);
@@ -257,6 +260,7 @@
 			files = (
 				638DD94F1EB7D54C00154AD5 /* LaunchScreen.storyboard in Resources */,
 				638DD94C1EB7D54C00154AD5 /* Assets.xcassets in Resources */,
+				6341FBE61EBBE43B003FDE1C /* schedule.html in Resources */,
 				638DD94A1EB7D54C00154AD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +446,7 @@
 				DEVELOPMENT_TEAM = PN2F4B4428;
 				INFOPLIST_FILE = "Puc Aberta/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.pucminas.Puc-Aberta";
+				PRODUCT_BUNDLE_IDENTIFIER = br.pucminas.pucaberta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -455,7 +459,7 @@
 				DEVELOPMENT_TEAM = PN2F4B4428;
 				INFOPLIST_FILE = "Puc Aberta/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.pucminas.Puc-Aberta";
+				PRODUCT_BUNDLE_IDENTIFIER = br.pucminas.pucaberta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

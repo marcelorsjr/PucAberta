@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vja-QU-1Fv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vja-QU-1Fv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,11 +23,11 @@
                         <color key="selectedImageTintColor" red="0.080738328400000003" green="0.25496095419999998" blue="0.36656981709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="nt9-hZ-9Va" kind="relationship" relationship="viewControllers" id="Ycd-kB-pXM"/>
-                        <segue destination="Pk5-wf-kO4" kind="relationship" relationship="viewControllers" id="3UT-UP-4Io"/>
-                        <segue destination="bPr-7i-Oxy" kind="relationship" relationship="viewControllers" id="9Gq-y8-ZVP"/>
-                        <segue destination="koL-Fs-NTj" kind="relationship" relationship="viewControllers" id="N69-cW-MA9"/>
-                        <segue destination="mkU-zm-fYE" kind="relationship" relationship="viewControllers" id="F1F-Np-6ig"/>
+                        <segue destination="koL-Fs-NTj" kind="relationship" relationship="viewControllers" id="fyo-yn-TJo"/>
+                        <segue destination="Pk5-wf-kO4" kind="relationship" relationship="viewControllers" id="Duw-4n-XZN"/>
+                        <segue destination="bPr-7i-Oxy" kind="relationship" relationship="viewControllers" id="Woh-z6-djL"/>
+                        <segue destination="mkU-zm-fYE" kind="relationship" relationship="viewControllers" id="uDY-Zo-Yay"/>
+                        <segue destination="nt9-hZ-9Va" kind="relationship" relationship="viewControllers" id="giM-cJ-ZxD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -114,7 +114,7 @@
         <!--PROGRAMACAO-->
         <scene sceneID="CI1-hm-Cl2">
             <objects>
-                <viewController id="bPr-7i-Oxy" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="bPr-7i-Oxy" customClass="ScheduleViewController" customModule="Puc_Aberta" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vyo-NA-cAu"/>
                         <viewControllerLayoutGuide type="bottom" id="EQp-uP-QUK"/>
@@ -122,10 +122,35 @@
                     <view key="view" contentMode="scaleToFill" id="lBh-Je-dDi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XvM-Ta-5sU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bPr-7i-Oxy" id="Vug-de-Rsm"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="x1U-mu-eLB">
+                                <rect key="frame" x="177" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EQp-uP-QUK" firstAttribute="top" secondItem="XvM-Ta-5sU" secondAttribute="bottom" id="7NP-wv-vbM"/>
+                            <constraint firstAttribute="trailing" secondItem="XvM-Ta-5sU" secondAttribute="trailing" id="84f-Dv-gYf"/>
+                            <constraint firstItem="XvM-Ta-5sU" firstAttribute="leading" secondItem="lBh-Je-dDi" secondAttribute="leading" id="B7P-D1-tEt"/>
+                            <constraint firstItem="x1U-mu-eLB" firstAttribute="centerY" secondItem="lBh-Je-dDi" secondAttribute="centerY" id="Iwg-ou-Ppc"/>
+                            <constraint firstItem="XvM-Ta-5sU" firstAttribute="top" secondItem="vyo-NA-cAu" secondAttribute="bottom" constant="-64" id="rkZ-4R-NqZ"/>
+                            <constraint firstItem="x1U-mu-eLB" firstAttribute="centerX" secondItem="lBh-Je-dDi" secondAttribute="centerX" id="uei-BL-5vT"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="PROGRAMACAO" image="clock-7" id="GoF-iN-r9b"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="x1U-mu-eLB" id="yNu-ab-odK"/>
+                        <outlet property="webView" destination="XvM-Ta-5sU" id="LYH-hP-UgY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZ2-Tg-H0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,7 +169,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4DZ-GQ-EcA">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="mkU-zm-fYE" id="y25-g5-lbz"/>
@@ -157,7 +182,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5yA-mC-Jva" firstAttribute="centerY" secondItem="sMq-YH-3Ef" secondAttribute="centerY" id="2DS-PP-VVZ"/>
-                            <constraint firstItem="4DZ-GQ-EcA" firstAttribute="top" secondItem="3kW-f7-vL2" secondAttribute="bottom" id="3tO-ex-iK9"/>
+                            <constraint firstItem="4DZ-GQ-EcA" firstAttribute="top" secondItem="3kW-f7-vL2" secondAttribute="bottom" constant="-64" id="3tO-ex-iK9"/>
                             <constraint firstItem="5yA-mC-Jva" firstAttribute="centerX" secondItem="sMq-YH-3Ef" secondAttribute="centerX" id="CTx-lP-jSB"/>
                             <constraint firstItem="4DZ-GQ-EcA" firstAttribute="leading" secondItem="sMq-YH-3Ef" secondAttribute="leading" id="gcD-aC-hUB"/>
                             <constraint firstItem="IU8-jc-Lo3" firstAttribute="top" secondItem="4DZ-GQ-EcA" secondAttribute="bottom" id="rPH-Hw-vM3"/>
@@ -165,6 +190,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="CURSOS" image="graduation-cap" id="tl6-Yb-W62"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="activityIndicator" destination="5yA-mC-Jva" id="in3-1G-lns"/>
                         <outlet property="webView" destination="4DZ-GQ-EcA" id="FWV-cL-1jI"/>
@@ -179,7 +205,7 @@
             <objects>
                 <navigationController id="vja-QU-1Fv" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kt5-Zp-wKF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kt5-Zp-wKF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.080738328397274017" green="0.25496095418930054" blue="0.36656981706619263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
