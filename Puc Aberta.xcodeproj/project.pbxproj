@@ -141,9 +141,7 @@
 			children = (
 				63B1B1421EB7E5E600C667C0 /* MapViewController.swift */,
 				63B1B1441EB7F80400C667C0 /* CoursesViewController.swift */,
-				63B1B1461EB92CED00C667C0 /* AboutViewController.swift */,
-				63B1B1481EB92D0A00C667C0 /* QRCodeViewController.swift */,
-				63B1B14A1EB92D4200C667C0 /* ScheduleViewController.swift */,
+				03A165CA1EBBE1D70054C66F /* QrCodeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -216,7 +214,6 @@
 				TargetAttributes = {
 					638DD93E1EB7D54B00154AD5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = PN2F4B4428;
 						ProvisioningStyle = Automatic;
 					};
 					638DD9541EB7D54C00154AD5 = {
@@ -288,8 +285,7 @@
 			files = (
 				63B1B1431EB7E5E600C667C0 /* MapViewController.swift in Sources */,
 				638DD9431EB7D54C00154AD5 /* AppDelegate.swift in Sources */,
-				63B1B1471EB92CED00C667C0 /* AboutViewController.swift in Sources */,
-				63B1B14B1EB92D4200C667C0 /* ScheduleViewController.swift in Sources */,
+				03A165CB1EBBE1D70054C66F /* QrCodeViewController.swift in Sources */,
 				63B1B1451EB7F80400C667C0 /* CoursesViewController.swift in Sources */,
 				63B1B1491EB92D0A00C667C0 /* QRCodeViewController.swift in Sources */,
 			);
@@ -443,8 +439,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PN2F4B4428;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Puc Aberta/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.pucminas.pucaberta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,8 +453,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PN2F4B4428;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Puc Aberta/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.pucminas.pucaberta;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -94,7 +94,7 @@
         <!--QR CODE-->
         <scene sceneID="ZbI-xL-dwm">
             <objects>
-                <viewController id="Pk5-wf-kO4" sceneMemberID="viewController">
+                <viewController id="Pk5-wf-kO4" customClass="QrCodeViewController" customModule="Puc_Aberta" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="26t-ph-gwO"/>
                         <viewControllerLayoutGuide type="bottom" id="CFb-aU-Nd2"/>

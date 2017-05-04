@@ -23,6 +23,11 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+<<<<<<< HEAD
+=======
+	<key>NSCameraUsageDescription</key>
+	<string>Escanear QR Code</string>
+>>>>>>> cccad6b91833880473bbf33a4de23cfa51717bf1
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
