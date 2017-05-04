@@ -16,7 +16,7 @@ class CoursesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.automaticallyAdjustsScrollViewInsets = false;
+        self.automaticallyAdjustsScrollViewInsets = false
         
         self.activityIndicator.startAnimating()
         let requestURL = NSURL(string:"http://www.pucminas.br/Graduacao/Paginas/default.aspx")

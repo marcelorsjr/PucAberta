@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vja-QU-1Fv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vja-QU-1Fv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -94,7 +93,7 @@
         <!--QR CODE-->
         <scene sceneID="ZbI-xL-dwm">
             <objects>
-                <viewController id="Pk5-wf-kO4" sceneMemberID="viewController">
+                <viewController id="Pk5-wf-kO4" customClass="QrCodeViewController" customModule="Puc_Aberta" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="26t-ph-gwO"/>
                         <viewControllerLayoutGuide type="bottom" id="CFb-aU-Nd2"/>
@@ -179,7 +178,7 @@
             <objects>
                 <navigationController id="vja-QU-1Fv" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kt5-Zp-wKF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kt5-Zp-wKF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.080738328397274017" green="0.25496095418930054" blue="0.36656981706619263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

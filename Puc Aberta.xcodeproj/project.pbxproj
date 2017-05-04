@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03A165CB1EBBE1D70054C66F /* QrCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A165CA1EBBE1D70054C66F /* QrCodeViewController.swift */; };
 		638DD9431EB7D54C00154AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DD9421EB7D54C00154AD5 /* AppDelegate.swift */; };
 		638DD94A1EB7D54C00154AD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638DD9481EB7D54C00154AD5 /* Main.storyboard */; };
 		638DD94C1EB7D54C00154AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638DD94B1EB7D54C00154AD5 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03A165CA1EBBE1D70054C66F /* QrCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QrCodeViewController.swift; path = ViewControllers/QrCodeViewController.swift; sourceTree = "<group>"; };
 		638DD93F1EB7D54C00154AD5 /* Puc Aberta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puc Aberta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638DD9421EB7D54C00154AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		638DD9491EB7D54C00154AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				63B1B1421EB7E5E600C667C0 /* MapViewController.swift */,
 				63B1B1441EB7F80400C667C0 /* CoursesViewController.swift */,
+				03A165CA1EBBE1D70054C66F /* QrCodeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -204,7 +207,6 @@
 				TargetAttributes = {
 					638DD93E1EB7D54B00154AD5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = PN2F4B4428;
 						ProvisioningStyle = Automatic;
 					};
 					638DD9541EB7D54C00154AD5 = {
@@ -275,6 +277,7 @@
 			files = (
 				63B1B1431EB7E5E600C667C0 /* MapViewController.swift in Sources */,
 				638DD9431EB7D54C00154AD5 /* AppDelegate.swift in Sources */,
+				03A165CB1EBBE1D70054C66F /* QrCodeViewController.swift in Sources */,
 				63B1B1451EB7F80400C667C0 /* CoursesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,8 +430,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PN2F4B4428;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Puc Aberta/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.pucminas.Puc-Aberta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,8 +444,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PN2F4B4428;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Puc Aberta/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.pucminas.Puc-Aberta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
