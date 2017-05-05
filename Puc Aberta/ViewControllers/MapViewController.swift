@@ -16,6 +16,8 @@ class MapViewController: UIViewController {
     @IBOutlet weak var buildingTypeLabel: UILabel!
     @IBOutlet weak var pinTypeImageView: UIImageView!
     
+    @IBOutlet weak var switchCanteens: UISwitch!
+    
     var groupAIsEnable = false
     var groupBIsEnable = false
     var groupCIsEnable = false
@@ -71,6 +73,12 @@ class MapViewController: UIViewController {
         }
     }
     
+    func reloadMap() {
+        loadBuildings()
+        mapView.addAnnotations(buildings)
+        self.mapView.showAnnotations(self.mapView.annotations, animated: true)
+    }
+    
     func loadEnabledGroups() {
         let defaults = UserDefaults.standard
         groupAIsEnable = defaults.bool(forKey: "grupo_a")
@@ -89,6 +97,7 @@ class MapViewController: UIViewController {
     
     func loadBuildings() {
         loadReceptivesAndFairs()
+        
         loadCanteens()
         
         if groupAIsEnable {
@@ -197,6 +206,23 @@ class MapViewController: UIViewController {
         buildings.append(Building(name: "nstituto de Ciências Exatas e Informática - ICEI", type: BuildingType.institutes, desc: "Grupo J",latitude: -19.92308,longitude: -43.992009))
     }
     
+    func changeCanteensState() {
+        for annotations in mapView.annotations {
+            let building = mapView.view(for: annotations)?.image
+            if building == #imageLiteral(resourceName: "ic_cantinas") {
+                mapView.view(for: annotations)?.isHidden = !switchCanteens.isOn
+            }
+        }
+    }
+    
+    
+    @IBAction func changedCanteensState(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.set(switchCanteens.isOn, forKey: "showCanteen")
+        changeCanteensState()
+    }
+    
+    
 }
 
 extension MapViewController: MKMapViewDelegate {
@@ -216,6 +242,22 @@ extension MapViewController: MKMapViewDelegate {
             annotationView!.canShowCallout = false
             if building.type == .canteen {
                 annotationView!.image = #imageLiteral(resourceName: "ic_cantinas")
+                
+                let defaults = UserDefaults.standard
+                let switchCanteen = defaults.bool(forKey: "showCanteen")
+                
+                
+                if switchCanteen == false || switchCanteens == nil {
+                    annotationView!.isHidden = true
+                    switchCanteens.isOn = false
+                } else {
+                    switchCanteens.isOn = true
+                }
+                
+                
+                
+                
+                
             } else if building.type == .receptive {
                 annotationView!.image = #imageLiteral(resourceName: "ic_receptivo")
             } else if building.type == .fair {
