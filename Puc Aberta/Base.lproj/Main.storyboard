@@ -61,7 +61,7 @@
                             <constraint firstItem="cWR-13-TMt" firstAttribute="top" secondItem="QAD-Bp-iIy" secondAttribute="bottom" id="xDk-Ge-nRs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="MAPA" image="pin-map" id="xOr-8K-dGd"/>
+                    <tabBarItem key="tabBarItem" title="MAPA" image="add_location_btn" id="xOr-8K-dGd"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="mapView" destination="QAD-Bp-iIy" id="AO7-v7-2LE"/>
@@ -84,7 +84,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SOBRE" image="info" id="uNc-fP-RG0"/>
+                    <tabBarItem key="tabBarItem" title="SOBRE" image="more_info_btn" id="uNc-fP-RG0">
+                        <inset key="imageInsets" minX="-1" minY="-1" maxX="-1" maxY="0.0"/>
+                    </tabBarItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPT-hJ-ROG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -144,7 +146,9 @@
                             <constraint firstItem="x1U-mu-eLB" firstAttribute="centerX" secondItem="lBh-Je-dDi" secondAttribute="centerX" id="uei-BL-5vT"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="PROGRAMACAO" image="clock-7" id="GoF-iN-r9b"/>
+                    <tabBarItem key="tabBarItem" title="PROGRAMACAO" image="clock_icon" id="GoF-iN-r9b">
+                        <inset key="imageInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                    </tabBarItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -223,10 +227,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="clock-7" width="30" height="30"/>
+        <image name="add_location_btn" width="14" height="19"/>
+        <image name="clock_icon" width="30" height="30"/>
         <image name="graduation-cap" width="30" height="30"/>
-        <image name="info" width="30" height="30"/>
-        <image name="pin-map" width="30" height="30"/>
+        <image name="more_info_btn" width="15" height="15"/>
         <image name="qrcode" width="26" height="26"/>
     </resources>
 </document>
