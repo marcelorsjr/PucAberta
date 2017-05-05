@@ -1,0 +1,75 @@
+1;Prédio 1;1;;-20.298529;-45.543365;1;2015-01-01 10:00:00;false
+4;Prédio 4;1;;-20.298748;-45.542748;1;2015-01-01 10:00:00;false
+5;Prédio 5;1;;-20.299040;-45.543301;1;2015-01-01 10:00:00;false
+1;Pró-Reitorias;5;"Pró-reitoria de Gestão Financeira - PROGEF - Gestão de Receita";-19.923613;-43.991775;1;2015-01-01 10:00:00;false
+2;Reitoria e SECOM;5;"Reitoria - Secretaria";-19.924144;-43.99296;1;2015-01-01 00:00:00;false
+4;ANIMA;5;"Auditórios / Salas Multimeios / Espaços Multiuso Auditório I";-19.923265;-43.992904;1;2015-01-01 00:00:00;false
+5;Faculdade Mineira de Direito;5;"Auditórios / Salas Multimeios / Espaços Multiuso Auditório II";-19.922958;-43.992619;1;2015-01-01 00:00:00;false
+6;ICH;5;"Auditórios / Salas Multimeios / Espaços Multiuso Sala Multimeios (sala 110)";-19.92308;-43.992009;1;2015-01-01 00:00:00;false
+7;SECAC;5;Secretaria de Cultura e Assuntos Comunitários - SECAC Espaço Cultura e Fé;-19.923605;-43.992494;1;2015-01-01 00:00:00;false
+8;Cooperativa e SECAC;5;"Cooperativa Cooperativa";-19.922961;-43.993303;1;2015-01-01 00:00:00;false
+9;Laboratórios do IPUC;5;Laboratórios do IPUC;-19.924577;-43.993981;1;2015-01-01 00:00:00;false
+10;PROPPG Engenharia Mecânica;5;"Instituto Politécnico - IPUC Laboratório de Mecânica dos Solos";-19.924996;-43.993852;1;2015-01-01 00:00:00;false
+11;PROINFRA;5;"Pró-reitoria de Logística e Infraestrutura - PROINFRA Chefia";-19.921899;-43.992652;1;2015-01-01 00:00:00;false
+12;Faculdade de Psicologia;5;"Diretório Acadêmico - D.A. D.A. Psicologia";-19.922442;-43.992665;1;2015-01-01 00:00:00;false
+13;FCA;5;"Auditórios / Salas Multimeios / Espaços Multiuso Sala Multimeios";-19.922651;-43.992424;1;2015-01-01 00:00:00;false
+14;ICEG;5;"Instituto de Ciências Econômicas e Gerenciais - ICEG Coordenação";-19.922651;-43.991751;1;2015-01-01 00:00:00;false
+15;Diretórios Academicos IPUC;5;"Diretório Acadêmico - D.A. D.A. Engenharia Civil";-19.92445;-43.993337;1;2015-01-01 00:00:00;false
+16;Cantina Shuffner;5;Serviços de Terceiros Cantina Schuffner - Prédio 16;-19.922586;-43.993;2;2015-01-01 00:00:00;false
+17;PROGEF e PROGRAD;5;"Pró-reitoria de Graduação - PROGRAD Coordenação de Estágio Integrado";-19.923073;-43.993407;1;2015-01-01 00:00:00;false
+18;PROGEF;5;Pró-reitoria de Gestão Financeira - PROGEF Divisão Financeira;-19.923318;-43.993206;1;2015-01-01 00:00:00;false
+19;GREEN;5;Instituto Politécnico - IPUC Grupo de Estudos em Energia Solar - GREEN;-19.921215;-43.994113;1;2015-01-01 00:00:00;false
+20;Prédio 20;5;"Instituto de Ciências Humanas - ICH Centro de Estudos Luso-Afro-Brasileiros - CESPUC";-19.923288;-43.995478;1;2015-01-01 00:00:00;false
+21;DCE;5;"Diretório Central dos Estudantes - DCE Diretório Central dos Estudantes - DCE";-19.923401;-43.993856;1;2015-01-01 00:00:00;false
+22;IPUC;5;Instituto Politécnico - IPUC Laboratórios de Antenas;-19.921567;-43.993963;1;2015-01-01 00:00:00;false
+23;ICBS Laboratórios;5;"Instituto de Ciências Biológicas e da Saúde - ICBS Laboratórios";-19.924977;-43.994318;1;2015-01-01 00:00:00;false
+24;ICBS-PET;5;"Instituto de Ciências Biológicas e da Saúde - ICBS Curso de Ciências Biológicas - Laboratórios de Botânica, Zoologia e Tratamento da Informação em Biologia - TIB";-19.925314;-43.994152;1;2015-01-01 00:00:00;false
+25;ICBS;5;"Instituto de Ciências Biológicas e da Saúde - ICBS Coordenação de Cursos";-19.924401;-43.994458;1;2015-01-01 00:00:00;false
+26;BIBLIOTECA;5;"A Biblioteca Padre Alberto Antoniazzi está localizada no Campus Coração Eucarístico prédio 26 e possui uma área de 9.578 m² distribuída em quatro andares.";-19.920858;-43.99325;1;2015-01-01 00:00:00;false
+27;Laboratório de Biotecnologia;5;Instituto de Ciências Biológicas e da Saúde  - ICBS Curso de Ciências Biológicas - Laboratórios de Biotecnologia;-19.921337;-43.992199;1;2015-01-01 00:00:00;false
+28;Complexo Esportivo;5;Complexo Esportivo;-19.922818;-43.990201;1;2015-01-01 00:00:00;false
+29;Cantina Sodexo;5;Serviços de Terceiros - Cantina Sodexo - Prédio 29;-19.923022;-43.991357;2;2015-01-01 00:00:00;false
+30;PROEX;5;"Auditórios / Salas Multimeios / Espaços Multiuso Teatro João Paulo II";-19.923171;-43.991035;1;2015-01-01 00:00:00;false
+31;Cantina Sinhazinha;5;Serviços de Terceiros Cantina Sinhazinha - Prédio 31;-19.923976;-43.993474;2;2015-01-01 00:00:00;false
+32;Laboratório de Ciências Naturais;5;Laboratório de Ciências Naturais;-19.921499;-43.989641;1;2015-01-01 00:00:00;false
+34;ICEI;5;"Diretório Acadêmico - D.A. D.A. Ciência da Computação";-19.923045;-43.994409;1;2015-01-01 00:00:00;false
+37;ICBS CEIVA;5;"Instituto de Ciências Biológicas e da Saúde - ICBS CEIVA / Biotério";-19.92089;-43.992337;1;2015-01-01 00:00:00;false
+38;ICBS Anexos;5;"Diretório Acadêmico - D.A. D.A. Ciências Biológicas";-19.924056;-43.994165;1;2015-01-01 00:00:00;false
+39;Vestiário Equipe de Jardinagem;5;Vestiário Equipe de Jardinagem;-19.920394;-43.991426;1;2015-01-01 00:00:00;false
+40;Museu de Ciências Naturais;5;"Auditórios / Salas Multimeios / Espaços Multiuso Auditório Museu";-19.92204;-43.989743;1;2015-01-01 00:00:00;false
+41;PROPPG Zoologia de Vertebrados;5;Pró-reitoria de Pesquisa e de Pós-graduação - PROPPG Programa de Pós-graduação em Zoologia de Vertebrados;-19.923746;-43.994391;1;2015-01-01 00:00:00;false
+43;SECAC, NAI e SEPLAN;5;"Auditórios / Salas Multimeios / Espaços Multiuso Auditório III";-19.923527;-43.993354;1;2015-01-01 00:00:00;false
+44;Clínica de Psicologia;5;"Faculdade de Psicologia Clínica de Psicologia";-19.92297;-43.994717;1;2015-01-01 00:00:00;false
+45;Clínica de Odontologia;5;"Instituto de Ciências Biológicas e da Saúde - ICBS Clínica de Odontologia - Atendimento";-19.923394;-43.994892;1;2015-01-01 00:00:00;false
+46;Clínica de Fonoaudiologia e Fisioterapia;5;"Instituto de Ciências Biológicas e da Saúde - ICBS Clínica de Fisioterapia";-19.923883;-43.995133;1;2015-01-01 00:00:00;false
+47;ICS;5;"Instituto de Ciências Sociais - ICS Coordenação";-19.925006;-43.993402;1;2015-01-01 00:00:00;false
+48;Ouvidoria Geral;5;Reitoria Ouvidoria Geral;-19.922863;-43.993492;1;2015-01-01 00:00:00;false
+49;Prédio 49;5;"Diretório Acadêmico - D.A. D.A. Face (Administração e Ciências Econômicas)";-19.922858;-43.991272;1;2015-01-01 00:00:00;false
+52;Abrigo de Res. Sólidos Comuns e Recicláveis;5;Abrigo de Resíduos Sólidos Comuns e Recicláveis;-19.92154;-43.994103;1;2015-01-01 00:00:00;false
+53;Abrigo de Resíduos Químicos;5;Abrigo de Resíduos Químicos;-19.921481;-43.992152;1;2015-01-01 00:00:00;false
+54;PROPPG;5;"Pró-reitoria de Pesquisa e de Pós-graduação - PROPPG Programa de Pós-graduação em Ciências Sociais";-19.919369;-43.994012;1;2015-01-01 00:00:00;false
+55;Galpão de Serralheria;5;Galpão de Serralheria;-19.920026;-43.993636;1;2015-01-01 00:00:00;false
+56;Depósito entre os Prédios 45 e 46;5;Depósito entre os Prédios 45 e 46;-19.92347;-43.99511;1;2015-01-01 00:00:00;false
+57;Trailer de Lanches;5;Trailer de Lanches - Prédio 57;-19.923889;-43.994024;2;2015-01-01 00:00:00;false
+58;Vestiário Feminino;5;Vestiário Feminino;-19.922899;-43.990285;1;2015-01-01 00:00:00;false
+59;Vestiários Complexo Esportivo;5;Vestiários Masculino e Feminino - Complexo Esportivo;-19.9217;-43.990473;1;2015-01-01 00:00:00;false
+60;SISTÊMICA;5;Instituto de Ciências Biológicas e da Saúde - ICBS Curso de Ciências Biológicas - SISTÊMICA;-19.92125;-43.992055;1;2015-01-01 00:00:00;false
+61;ADPUC e PUC TV;5;"Associação dos Docentes da PUC Minas - ADPUC Atendimento";-19.922412;-43.994086;1;2015-01-01 00:00:00;false
+63;Quadra Coberta;5;Quadra Coberta;-19.920809;-43.990557;1;2015-01-01 00:00:00;false
+64;Vestiário da Piscina;5;Vestiário da Piscina;-19.922941;-43.990809;1;2015-01-01 00:00:00;false
+65;Edifício Complexo Esportivo;5;Edifício Complexo Esportivo;-19.92236;-43.99108;1;2015-01-01 00:00:00;false
+67;Anexo entre os Prédios 34 e 44;5;Anexo entre os Prédios 34 e 44;-19.922978;-43.994531;1;2015-01-01 00:00:00;false
+69;Cobertura Carro PUC TV;5;Cobertura Carro PUC TV;-19.922311;-43.99414;1;2015-01-01 00:00:00;false
+70;Sala de Manutenção Civil;5;Sala de Manutenção Civil;-19.920105;-43.993697;1;2015-01-01 00:00:00;false
+73;Banco Santander;5;Banco Santander;-19.924138;-43.993986;3;2015-01-01 00:00:00;false
+74;Guarita Pedestre Biblioteca;5;Guarita Pedestre Biblioteca;-19.9223351;-43.9933655;1;2015-01-01 00:00:00;false
+75;Guarita Portaria 03;5;Guarita Portaria 03;-19.923762;-43.990816;4;2015-01-01 00:00:00;false
+76;Guarita Portaria 05;5;Guarita Portaria 05;-19.925387;-43.992585;4;2015-01-01 00:00:00;false
+78;Guarita Portaria 07;5;Guarita Portaria 07;-19.924999;-43.994711;4;2015-01-01 00:00:00;falseå
+79;Guarita Portaria 08;5;Guarita Portaria 08;-19.924466;-43.995121;4;2015-01-01 00:00:00;false
+GR;Guarita Portaria 10;5;Guarita Portaria 10;-19.921702;-43.99406;4;2015-01-01 00:00:00;false
+81;Guarita Portaria 11;5;Guarita Portaria 11;-19.920459;-43.99403;4;2015-01-01 00:00:00;false
+82;Guarita Pedestre Prédio 03;5;Guarita Pedestre Prédio 03;-19.924586;-43.993;1;2015-01-01 00:00:00;false
+8;Posto Médico;5;Posto médico - Posto de Saúde;-19.922945;-43.9934;5;2015-01-01 00:00:00;false
+B;Caixas Eletrônicos;5;Caixas Eletrônicos;-19.923059;-43.991631;3;2015-01-01 00:00:00;false
+DG;Cantina Divin Gout;5;Cantina Divin Gout;-19.923358;-43.993784;2;2015-01-01 00:00:00;false

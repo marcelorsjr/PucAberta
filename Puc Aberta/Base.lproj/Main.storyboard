@@ -46,30 +46,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-Bp-iIy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-Bp-iIy">
+                                <rect key="frame" x="0.0" y="64" width="375" height="509"/>
                                 <connections>
                                     <outlet property="delegate" destination="koL-Fs-NTj" id="qas-pF-3uB"/>
                                 </connections>
                             </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ny-za-DWG">
+                                <rect key="frame" x="0.0" y="573" width="375" height="45"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3U-Nu-CWM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.06166810542345047" green="0.20263272523880005" blue="0.28925377130508423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="F6V-7u-7N3"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_auditorios" translatesAutoresizingMaskIntoConstraints="NO" id="QRU-cS-TKm">
+                                        <rect key="frame" x="15" y="12.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="P0n-Ln-VJh"/>
+                                            <constraint firstAttribute="width" constant="20" id="Y1Y-5L-O2u"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prédio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKO-j0-4kb">
+                                        <rect key="frame" x="45" y="25" width="38.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                        <color key="textColor" red="0.061668105420000001" green="0.2026327252" blue="0.28925377130000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instituto de Ciências Exatas e Informatica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fae-Mh-xlz">
+                                        <rect key="frame" x="45" y="6" width="315" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.061668105420000001" green="0.2026327252" blue="0.28925377130000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="j3U-Nu-CWM" secondAttribute="trailing" id="5Tm-ae-qY8"/>
+                                    <constraint firstItem="QRU-cS-TKm" firstAttribute="leading" secondItem="6ny-za-DWG" secondAttribute="leading" constant="15" id="Fyc-ja-8ch"/>
+                                    <constraint firstItem="fae-Mh-xlz" firstAttribute="leading" secondItem="QRU-cS-TKm" secondAttribute="trailing" constant="10" id="P6e-Gl-3pX"/>
+                                    <constraint firstItem="j3U-Nu-CWM" firstAttribute="leading" secondItem="6ny-za-DWG" secondAttribute="leading" id="RGa-gB-0aZ"/>
+                                    <constraint firstItem="QRU-cS-TKm" firstAttribute="centerY" secondItem="6ny-za-DWG" secondAttribute="centerY" id="XI9-W1-VV6"/>
+                                    <constraint firstItem="j3U-Nu-CWM" firstAttribute="top" secondItem="6ny-za-DWG" secondAttribute="top" id="bLF-OH-rx1"/>
+                                    <constraint firstItem="UKO-j0-4kb" firstAttribute="top" secondItem="fae-Mh-xlz" secondAttribute="bottom" constant="3" id="dde-eM-peh"/>
+                                    <constraint firstItem="fae-Mh-xlz" firstAttribute="top" secondItem="j3U-Nu-CWM" secondAttribute="bottom" constant="5" id="oX1-i3-BHc"/>
+                                    <constraint firstAttribute="height" constant="45" id="sqY-hX-IAd"/>
+                                    <constraint firstItem="UKO-j0-4kb" firstAttribute="leading" secondItem="fae-Mh-xlz" secondAttribute="leading" id="uXD-jO-lYR"/>
+                                    <constraint firstAttribute="trailing" secondItem="fae-Mh-xlz" secondAttribute="trailing" constant="15" id="yoB-xU-0XN"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cWR-13-TMt" firstAttribute="top" secondItem="6ny-za-DWG" secondAttribute="bottom" id="6b5-F4-ffJ"/>
+                            <constraint firstItem="6ny-za-DWG" firstAttribute="top" secondItem="QAD-Bp-iIy" secondAttribute="bottom" id="It6-8w-OkS"/>
+                            <constraint firstAttribute="trailing" secondItem="6ny-za-DWG" secondAttribute="trailing" id="OTf-L6-Kak"/>
+                            <constraint firstItem="6ny-za-DWG" firstAttribute="leading" secondItem="qP4-UQ-Y9E" secondAttribute="leading" id="Z9V-Fp-X3c"/>
                             <constraint firstAttribute="trailing" secondItem="QAD-Bp-iIy" secondAttribute="trailing" id="c3j-YG-I8M"/>
                             <constraint firstItem="QAD-Bp-iIy" firstAttribute="leading" secondItem="qP4-UQ-Y9E" secondAttribute="leading" id="jKI-yD-g7y"/>
                             <constraint firstItem="QAD-Bp-iIy" firstAttribute="top" secondItem="1O9-ub-cOB" secondAttribute="bottom" id="lZX-HE-BBB"/>
-                            <constraint firstItem="cWR-13-TMt" firstAttribute="top" secondItem="QAD-Bp-iIy" secondAttribute="bottom" id="xDk-Ge-nRs"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="MAPA" image="pin-map" id="xOr-8K-dGd"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
+                        <outlet property="buildingTypeLabel" destination="UKO-j0-4kb" id="mAE-5E-39q"/>
                         <outlet property="mapView" destination="QAD-Bp-iIy" id="AO7-v7-2LE"/>
+                        <outlet property="nameBuildingTextField" destination="fae-Mh-xlz" id="mTx-w4-gxa"/>
+                        <outlet property="pinTypeImageView" destination="QRU-cS-TKm" id="PIC-2Z-0Bo"/>
+                        <outlet property="viewDetailHeightConstraint" destination="sqY-hX-IAd" id="MpK-IC-TtG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OWp-1L-5rT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="-347"/>
+            <point key="canvasLocation" x="869.60000000000002" y="-347.67616191904051"/>
         </scene>
         <!--SOBRE-->
         <scene sceneID="IUc-qU-z5P">
@@ -225,6 +277,7 @@
     <resources>
         <image name="clock-7" width="30" height="30"/>
         <image name="graduation-cap" width="30" height="30"/>
+        <image name="ic_auditorios" width="50" height="50"/>
         <image name="info" width="30" height="30"/>
         <image name="pin-map" width="30" height="30"/>
         <image name="qrcode" width="26" height="26"/>
