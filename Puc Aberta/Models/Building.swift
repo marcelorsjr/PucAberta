@@ -8,20 +8,28 @@
 
 import MapKit
 
+enum BuildingType {
+    case canteen
+    case receptive
+    case fair
+    case auditoriums
+    case institutes
+}
+
 class Building: NSObject, MKAnnotation {
     
-    var id: String?
     var name: String?
-    var type: Int?
+    var type: BuildingType?
+    var desc: String?
     let coordinate: CLLocationCoordinate2D
     
     
-    init(id: String, name: String, type: String, latitude: String, longitude: String) {
-        
-        self.id = id
+    init(name: String, type: BuildingType, desc: String, latitude: Double, longitude: Double) {
+    
         self.name = name
-        self.type =  Int(type)
-        coordinate = CLLocationCoordinate2D(latitude: Double(latitude)!, longitude: Double(longitude)!)
+        self.type =  type
+        self.desc = desc
+        coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         
         super.init()
     }

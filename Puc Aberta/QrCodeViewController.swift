@@ -91,8 +91,66 @@ extension QrCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
             qrCodeFrameView?.frame = barCodeObject!.bounds
             
             if metadataObj.stringValue != nil {
+
+                var mensagem = ""
+                let defaults = UserDefaults.standard
+                switch metadataObj.stringValue {
+                case "grupo_a":
+                    mensagem = "Grupo A Liberado"
+                    defaults.set(true, forKey: metadataObj.stringValue)
+                break
+                    
+                case "grupo_b":
+                    mensagem = "Grupo B Liberado"
+                    defaults.set(true, forKey: metadataObj.stringValue)
+                break
+                    
+                case "grupo_c":
+                    mensagem = "Grupo C Liberado"
+                    defaults.set(true, forKey: metadataObj.stringValue)
+                break
+                    
+                case "grupo_d":
+                    mensagem = "Grupo D Liberado"
+                    defaults.set(true, forKey: metadataObj.stringValue)
+                break
+                    
+                case "grupo_e":
+                    mensagem = "Grupo E Liberado"
+                    defaults.set(true, forKey: metadataObj.stringValue)
+                break
+                    
+                case "grupo_f":
+                    mensagem = "Grupo F Liberado"
+                    defaults.set(true, forKey: metadataObj.stringValue)
+                break
+                    
+                case "grupo_g":
+                    mensagem = "Grupo G Liberado"
+                    defaults.set(true, forKey: metadataObj.stringValue)
+                break
+                    
+                case "grupo_h":
+                    mensagem = "Grupo H Liberado"
+                    defaults.set(true, forKey: metadataObj.stringValue)
+                break
+                    
+                case "grupo_i":
+                    mensagem = "Grupo I Liberado"
+                    defaults.set(true, forKey: metadataObj.stringValue)
+                break
+                    
+                case "grupo_j":
+                    mensagem = "Grupo J Liberado"
+                    defaults.set(true, forKey: metadataObj.stringValue)
+                break
+                    
+                default:
+                    mensagem = "Nenhum grupo encontrado"
+                }
+                
                 let alert = UIAlertController(title: title,
-                                              message:metadataObj.stringValue,
+                                              message:mensagem,
                                               preferredStyle: UIAlertControllerStyle.alert)
                 
                 let cancelAction = UIAlertAction(title: "OK",
