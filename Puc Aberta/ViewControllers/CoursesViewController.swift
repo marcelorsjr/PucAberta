@@ -9,7 +9,7 @@
 import UIKit
 
 class CoursesViewController: UIViewController {
-
+    
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
@@ -19,18 +19,11 @@ class CoursesViewController: UIViewController {
         self.automaticallyAdjustsScrollViewInsets = false
         
         self.activityIndicator.startAnimating()
-        let requestURL = NSURL(string:"http://www.pucminas.br/Graduacao/Paginas/default.aspx")
-        let request = NSURLRequest(url: requestURL as! URL)
+        let requestURL = URL(string:"http://www.pucminas.br/Graduacao/Paginas/default.aspx")
+        let request = NSURLRequest(url: requestURL!)
         webView.loadRequest(request as URLRequest)
-        
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 }
 
 extension CoursesViewController: UIWebViewDelegate {

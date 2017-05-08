@@ -31,14 +31,14 @@ class MapViewController: UIViewController {
     
     var buildings: [Building] = []
     var locationManager = CLLocationManager()
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
-
-
-
+        
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,11 +58,6 @@ class MapViewController: UIViewController {
         super.viewDidAppear(animated)
         checkLocationAuthorizationStatus()
         
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func checkLocationAuthorizationStatus() {
@@ -153,7 +148,7 @@ class MapViewController: UIViewController {
         buildings.append(Building(name: "Cantina Divin Gout", type: BuildingType.canteen, desc: "",latitude: -19.923375,longitude: -43.993772))
         buildings.append(Building(name: "Cantina Shuffner", type: BuildingType.canteen, desc: "",latitude: -19.922603,longitude: -43.992991))
         buildings.append(Building(name: "Cantina Sodexo", type: BuildingType.canteen, desc: "",latitude: -19.923024,longitude: -43.991382))
-
+        
     }
     
     func loadGroupA() {
@@ -253,11 +248,6 @@ extension MapViewController: MKMapViewDelegate {
                 } else {
                     switchCanteens.isOn = true
                 }
-                
-                
-                
-                
-                
             } else if building.type == .receptive {
                 annotationView!.image = #imageLiteral(resourceName: "ic_receptivo")
             } else if building.type == .fair {
@@ -267,7 +257,7 @@ extension MapViewController: MKMapViewDelegate {
             } else if building.type == .institutes {
                 annotationView!.image = #imageLiteral(resourceName: "ic_institutos_e_faculdades")
             }
-
+            
             
         } else {
             annotationView!.annotation = annotation
