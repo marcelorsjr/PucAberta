@@ -18,10 +18,15 @@ class QrCodeViewController: UIViewController {
     var qrCodeFrameView:UIView?
     
     // MARK: - Lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         self.initialize()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        captureSession?.stopRunning()
     }
     
     // MARK: Private
@@ -63,19 +68,9 @@ class QrCodeViewController: UIViewController {
             return
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+// MARK: AVCaptureMetadataOutputObjectsDelegate
 
 extension QrCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
