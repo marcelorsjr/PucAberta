@@ -198,7 +198,7 @@ class MapViewController: UIViewController {
     
     func loadGroupJ() {
         buildings.append(Building(name: "Auditório Multiuso", type: BuildingType.auditoriums, desc: "Grupo J - 16h às 18h",latitude: -19.923527,longitude: -43.993354))
-        buildings.append(Building(name: "nstituto de Ciências Exatas e Informática - ICEI", type: BuildingType.institutes, desc: "Grupo J",latitude: -19.92308,longitude: -43.992009))
+        buildings.append(Building(name: "Instituto de Ciências Exatas e Informática - ICEI", type: BuildingType.institutes, desc: "Grupo J",latitude: -19.92308,longitude: -43.992009))
     }
     
     func changeCanteensState() {

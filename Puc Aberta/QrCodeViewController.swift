@@ -149,6 +149,8 @@ extension QrCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
                     mensagem = "Nenhum grupo encontrado"
                 }
                 
+                self.tabBarController?.selectedIndex = 0
+                
                 let alert = UIAlertController(title: title,
                                               message:mensagem,
                                               preferredStyle: UIAlertControllerStyle.alert)
@@ -158,6 +160,7 @@ extension QrCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
                 
                 alert.addAction(cancelAction)
                 self.present(alert, animated:true)
+                return
             }
         }
     }
